@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Your Wedding Planner</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #ffffff;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #910000;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #910000;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 500px;
+            background-image: url('WhatsApp\ Image\ 2024-11-24\ at\ 20.32.42.jpeg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #ff5e5e;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .cta-button:hover {
+            background-color: #910000;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .services h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+            color: #910000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .service-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .service-item h3 {
+            font-size: 28px;
+            color: #910000;
+            margin-bottom: 15px;
+        }
+
+        .service-item p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .service-item img,
+        .service-item video {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #910000;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .cta-button:hover {
+            background-color: #ff5e5e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer .footer-content {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        footer ul {
+            list-style: none;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+
+        footer ul li a:hover {
+            color: #910000;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .hero h2 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 16px;
+            }
+
+            .services h2 {
+                font-size: 30px;
+            }
+
+            .service-item {
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .service-item h3 {
+                font-size: 24px;
+            }
+
+            .service-item p {
+                font-size: 16px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>The Wedding Wizards</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="services" class="hero">
+            <div class="hero-text">
+                <h2>Our Services</h2>
+                <p>Explore the premium wedding planning services that we offer to make your big day truly unforgettable.</p>
+                <a href="contact.html" class="cta-button">Get In Touch</a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <h2>Our Services</h2>
+
+            <!-- Service 1 -->
+            <div class="service-item">
+                <img src="WhatsApp Image 2024-11-24 at 20.32.42 (1).jpeg" alt="Wedding Planning">
+                <h3>Wedding Planning</h3>
+                <p>From conceptualizing your dream wedding to coordinating every detail, we ensure your special day is stress-free and memorable.</p>
+                <a href="contact.html" class="cta-button">Learn More</a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-item">
+                <video src="cb3ff4e4e631acdd791500f86b930d82.mp4" controls autoplay muted loop></video>
+                <h3>Venue Selection</h3>
+                <p>We offer personalized venue selection, helping you find the perfect location that fits your vision and budget.</p>
+                <a href="contact.html" class="cta-button">Learn More</a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-item">
+                <video src="86c5e01747e18d03527994bde7e43db2.mp4" controls autoplay muted loop></video>
+                <h3>Floral Design</h3>
+                <p>Our expert florists create stunning floral arrangements that complement your wedding style, adding beauty and elegance to every moment.</p>
+                <a href="contact.html" class="cta-button">Learn More</a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-item">
+                <img src="catering.jpg" alt="Catering">
+                <h3>Catering</h3>
+                <p>We work with top-notch caterers to deliver delicious and customized menus that delight your guests.</p>
+                <a href="contact.html" class="cta-button">Learn More</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Your Wedding Planner. All Rights Reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
